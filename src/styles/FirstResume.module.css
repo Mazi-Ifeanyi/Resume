@@ -1,0 +1,199 @@
+:root{
+    --fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --lightDark: rgb(69, 69, 69);
+    --border-color: rgb(176, 176, 176);
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 100%;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--lightDark);
+    border-color: var(--border-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.top{
+     display: flex;
+     width: 100%;
+     height: 100px;
+     background-color: rgb(42, 42, 42);
+}
+
+.leftSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.leftSection>h2{
+    margin: 0;
+    color: #fff;
+    font-family: var(--fontFamily);
+}
+
+.leftSection>p{
+    margin: 0;
+    color: #fff;
+    font-family: var(--fontFamily);
+}
+
+.rightSection{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 90px;
+}
+
+.rightSection>div{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   height: fit-content;
+   margin: 2px 0px 2px 0px;
+}
+
+.rightSection>div>h5{
+    margin: 0;
+    color: #fff;
+    font-family: var(--fontFamily);
+}
+
+.rightSection>div>p{
+    margin: 0;
+    color: #fff;
+    font-family: var(--fontFamily);
+    font-size: 15px;
+}
+
+.description{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+.description>p{
+    text-align: center;
+    font-family: var(--fontFamily);
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.roleContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.experienceContainer{
+    margin-top: 20px;
+    height: fit-content;
+}
+
+.experienceContainer>h5{
+    margin: 0;
+    font-family: var(--fontFamily);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--lightDark);
+}
+
+.experienceContainer>p{
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: var(--fontFamily);
+    font-size: 13px;
+    color: var(--lightDark);
+}
+
+.companyContainer{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(70, 70, 70);
+}
+
+.companyContainer>p{
+    margin: 0;
+    font-style: italic;
+    color: var(--lightDark);
+    font-family: (--fontFamily);
+    font-size: 14px;
+}
+
+.ul>li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--lightDark);
+}
+
+.skillContainer{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.skillContainer>div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.skillContainer>div>p{
+    color: var(--lightDark);
+    font-family: (--fontFamily);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.skillContainer>div>ul{
+    margin: 0;
+}
+
+.hobbyParent{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.hobbyParent>div{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+}
+
+.hobbyParent>div>p{
+    color: var(--lightDark);
+    font-family: (--fontFamily);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hobbyParent>div>ul{
+    margin: 0;
+}
+
+@media print{
+    button{
+        display: none;
+    }
+}
